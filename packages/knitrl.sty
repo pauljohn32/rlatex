@@ -58,7 +58,11 @@
 \def\R{{\normalfont\textsf{R}}{}}
 
 \lstdefinestyle{Rstyle}{fancyvrb=false,escapechar=`,language=R,%
-                        basicstyle={\color{\Rcolor}\Rsize\ttfamily},
+                        basicstyle={\color{\Rcolor}\Rsize\ttfamily},%
+                        tabsize=2,%
+                        breaklines=true,%
+                        breakatwhitespace=true,%
+                        \lst@ifdisplaystyle\color{Routcolor}\Routsize\ttfamily\fi,%
                         backgroundcolor=\color{\Rbackground},%
                         showstringspaces=false,%
                         keywordstyle=\color{\Rcolor},%
